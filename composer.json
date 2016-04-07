@@ -1,0 +1,77 @@
+{
+	"name": "chartersluxury.com",
+	"description": "Charters Luxury site",
+	"keywords": ["chartersluxury", "laravel"],
+	"authors": [
+		{
+			"name": "Sergey Gladkovskiy",
+			"email": "smgladkovskiy@gmail.com",
+			"homepage": "http://uniglad.ru",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"laravel/framework": "4.2.*",
+		"barryvdh/laravel-ide-helper": "1.*",
+		"itsgoingd/clockwork": "dev-master",
+		"raveren/kint": "1.0.*@dev",
+		"intervention/image": "2.*",
+		"intervention/imagecache": "dev-master",
+		"mcamara/laravel-localization": "0.14.*",
+		"ceesvanegmond/minify": "2.0.*",
+		"raven/raven": "dev-master",
+		"caouecs/laravel4-lang": "dev-master",
+		"guzzlehttp/guzzle": "4.*",
+		"laracasts/commander": "~1.0",
+		"codeception/codeception": "*",
+		"pda/pheanstalk": "2.1.*"
+	},
+	"require-dev": {
+		"way/generators": "2.*",
+		"fzaninotto/faker": "1.3.*@dev",
+		"phpunit/phpunit": "4.1.*",
+		"xethron/migrations-generator": "dev-master",
+		"orangehill/iseed": "dev-master"
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/controllers/API",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/filters",
+			"app/lib",
+			"app/tests/API/helpers"
+		],
+		"files": [
+			"app/Site/helpers.php"
+		],
+		"psr-4": {
+			"API\\": "app/API",
+			"Site\\": "app/Site"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"phpartisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan ide-helper:generate",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"suggest": {
+		"XML_RPC2": "XML-RPC client/server library. Installation: pear install XML_RPC2"
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
+}

@@ -1,0 +1,239 @@
+/* # -- ELOQUENCE — COMING SOON PAGE
+================================================== */
+
+/* Table of Contents
+   ==================================================
+
+    # -- Default colors
+    # -- Blue scheme
+    # -- Red scheme
+    # -- Yellow scheme
+    # -- Purple scheme
+    # -- Green scheme
+
+   ==================================================
+*/
+
+
+/* # -- DEFAULT COLORS
+================================================== */
+
+/*body a { color: #4DD5B0; }*/
+/*body a:hover { color: #29AD89; }*/
+
+/*body input[type="submit"] {*/
+	/*background: #3A3A47;*/
+	/*color: #FFF;*/
+/*}*/
+
+/*body input[type="submit"]:hover {*/
+	/*background: #4DD5B0;*/
+	/*border: 1px solid #29AD89;*/
+	/*color: #FFF;*/
+/*}*/
+
+
+/* -- btns -- */
+
+body .btn.no-color {
+	color: #FFF;
+	background: transparent !important;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.btn.no-color.current,
+.btn.no-color:hover {
+	color: #FFF;
+	border: 2px solid rgba(255, 255, 255, 1);
+}
+
+/* # -- RED SCHEME
+================================================== */
+
+body.red a { color: #E74C3C; }
+body.red a:hover { color: #C0392B; }
+
+/* -- btns -- */
+
+body.red .btn {
+	color: #FFF;
+	background: #E74C3C;
+}
+
+body.red .btn:hover {
+	color: #FFF;
+	background: #C0392B;
+}
+
+/* -- newsletter -- */
+
+body.red #newsletter a:hover {
+	background: #C0392B;
+}
+
+
+/* -- team -- */
+
+body.red #team .body .persons > li .networks {
+	background: #BF392B;
+	background: rgba(191, 57, 43, 0.8);
+}
+
+
+/* -- services -- */
+
+body.red #services .body > ul > li > h2 {
+	color: #E74C3C;
+}
+
+
+/* # -- YELLOW SCHEME
+================================================== */
+
+body.yellow a { color: #F1C40F; }
+body.yellow a:hover { color: #F39C12; }
+
+/* -- btns -- */
+
+body.yellow .btn {
+	color: #FFF;
+	background: #F1C40F;
+}
+
+body.yellow .btn:hover {
+	color: #FFF;
+	background: #F39C12;
+}
+
+body.yellow input[type="submit"] {
+	background: #F1C40F !important;
+}
+
+body.yellow input[type="submit"]:hover {
+	background: #F39C12 !important;
+}
+
+/* -- newsletter -- */
+
+body.yellow #newsletter a:hover {
+	background: #F39C12;
+}
+
+
+/* -- team -- */
+
+body.yellow #team .body .persons > li .networks {
+	background: #F1C40F;
+	background: rgba(243, 197, 15, 0.8);
+}
+
+
+/* -- services -- */
+
+body.yellow #services .body > ul > li > h2 {
+	color: #F1C40F;
+}
+
+
+/* # -- PURPLE SCHEME
+================================================== */
+
+body.purple a { color: #9B59B6; }
+body.purple a:hover { color: #8E44AD; }
+
+/* -- btns -- */
+
+body.purple .btn {
+	color: #FFF;
+	background: #9B59B6;
+}
+
+body.purple .btn:hover {
+	color: #FFF;
+	background: #8E44AD;
+}
+
+body.purple input[type="submit"] {
+	background: #9B59B6 !important;
+}
+
+body.purple input[type="submit"]:hover {
+	background: #8E44AD !important;
+}
+
+/* -- newsletter -- */
+
+body.purple #newsletter a:hover {
+	background: #8E44AD;
+}
+
+
+/* -- team -- */
+
+body.purple #team .body .persons > li .networks {
+	background: #9B59B6;
+	background: rgba(155, 88, 181, 0.8);
+}
+
+
+/* -- services -- */
+
+body.purple #services .body > ul > li > h2 {
+	color: #9B59B6;
+}
+
+
+/* # -- GREEN SCHEME
+================================================== */
+
+body.green a { color: #1ABC9C; }
+body.green a:hover { color: #16A085; }
+
+/* -- btns -- */
+
+body.green .btn {
+	color: #FFF;
+	background: #1ABC9C;
+}
+
+body.green .btn:hover {
+	color: #FFF;
+	background: #16A085;
+}
+
+body.green input[type="submit"] {
+	background: #1ABC9C !important;
+}
+
+body.green input[type="submit"]:hover {
+	background: #16A085 !important;
+}
+
+/* -- newsletter -- */
+
+body.green #newsletter a:hover {
+	background: #16A085;
+}
+
+
+/* -- team -- */
+
+body.green #team .body .persons > li .networks {
+	background: #1ABC9C;
+	background: rgba(27, 189, 157, 0.8);
+}
+
+
+/* -- services -- */
+
+body.green #services .body > ul > li > h2 {
+	color: #1ABC9C;
+}
+
+.btn-default {
+	color: #333!important;
+	background-color: #fff!important;
+	border: 1px solid #ccc!important;
+}
